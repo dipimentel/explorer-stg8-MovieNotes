@@ -9,8 +9,6 @@ O projeto consiste em uma aplicação onde o usuário cadastra um filme, preench
 
 No desenvolvimento da API foi utilizado o framework Express, o Nodemon, o banco de dados SQLite com o Beekeeper Studio, o Querie Builder Knex, o bcrypt para a criptografia das senhas e o Insomnia para realizar as requisições.
 
-Teste
-
 &nbsp;
 ## 🛠 Tecnologias
 - JavaScript
