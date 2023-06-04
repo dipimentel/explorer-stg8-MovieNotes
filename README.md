@@ -7,8 +7,9 @@ Este foi um desafio proposto ao final do stage 8, no curso de Desenvolvimento We
 
 O projeto consiste em uma aplicação onde o usuário cadastra um filme, preenche com algumas informações (nome, descrição, nota) e cria tags relacionadas a ele.
 
-No desenvolvimento da API foi utilizado o framework Express, o Nodemon, o banco de dados SQLite com o Beekeeper Studio, o Querie Builder Knex, o bcrypt para a criptografia das senhas e o Insominia para realizar as requisições.
+No desenvolvimento da API foi utilizado o framework Express, o Nodemon, o banco de dados SQLite com o Beekeeper Studio, o Querie Builder Knex, o bcrypt para a criptografia das senhas e o Insomnia para realizar as requisições.
 
+Teste
 
 &nbsp;
 ## 🛠 Tecnologias
