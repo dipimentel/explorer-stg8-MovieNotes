@@ -3,7 +3,7 @@
 ![Schema da API](https://raw.githubusercontent.com/dipimentel/explorer-stg8-MovieNotes/main/img/schema-movie-notes.png)
 
 ## 💻 Sobre o projeto
-Este foi um desafio proposto ao final do stage 8, no curso de Desenvolvimento Web [**Explorer**](https://www.rocketseat.com.br/explorer), da **Rocketseat**, com o objetivo de colocar em prática os conceitos aprendidos sobre o densenvolvimento de uma aplicação backend utilizando o Node.JS, como APIs, utilização de rotas, métodos HTTP, Route, Query e Body Params, Status Codes, middlewares, banco de dados, consultas SQL, comandos DML e DDL, querie builder, migrations e criptografia de senhas.
+Este foi um desafio proposto ao final do stage 8, no curso de Desenvolvimento Web [**Explorer**](https://www.rocketseat.com.br/explorer), da **Rocketseat**, com o objetivo de colocar em prática os conceitos aprendidos sobre o desenvolvimento de uma aplicação backend utilizando o Node.JS, como APIs, utilização de rotas, métodos HTTP, Route, Query e Body Params, Status Codes, middlewares, banco de dados, consultas SQL, comandos DML e DDL, querie builder, migrations e criptografia de senhas.
 
 O projeto consiste em uma aplicação onde o usuário cadastra um filme, preenche com algumas informações (nome, descrição, nota) e cria tags relacionadas a ele.
 
@@ -35,7 +35,7 @@ No desenvolvimento da API foi utilizado o framework Express, o Nodemon, o banco 
 
 ### Notas
   - **Cadastrar nota**<br>
-  Para cadastrar uma nota é necessário fazer uma requisiçnao POST, informando na rota o ID do usuário que está criando a nota, e enviar um json contendo *title*, *description*, *rating (1 a 5)* e *tags (array)* para a rota:<br>
+  Para cadastrar uma nota é necessário fazer uma requisição POST, informando na rota o ID do usuário que está criando a nota, e enviar um json contendo *title*, *description*, *rating (1 a 5)* e *tags (array)* para a rota:<br>
   `http://localhost:3333/notes/UserID`
   
   - **Deletar nota**<br>
@@ -47,7 +47,7 @@ No desenvolvimento da API foi utilizado o framework Express, o Nodemon, o banco 
   `http://localhost:3333/notes/NoteID`
   
   - **Listar todas as notas do usuário ou realizar uma pesquisa**<br>
-  Para visualizar uma lista com todas as notas criadas por um determinado usuário, basta fazer uma requisição GET e inviar o ID do usuário como uma query na rota:<br>
+  Para visualizar uma lista com todas as notas criadas por um determinado usuário, basta fazer uma requisição GET e enviar o ID do usuário como uma query na rota:<br>
   `http://localhost:3333/notes?user_id=1&title&tags`
   <br><br>
   Também é possível utilizar os parâmetros *title* e *tags* para realizar uma busca por título e/ou por tags:<br>
