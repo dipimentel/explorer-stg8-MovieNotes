@@ -5,7 +5,7 @@ class NotesController {
 
     async create(req, res) {
         const { title, description, rating, tags } = req.body;
-        const { user_id } = req.params;
+        const user_id = req.user.id;
 
         if (rating > 5 || rating <1) {
             throw new AppError("A nota deve estar entre 1 e 5.")

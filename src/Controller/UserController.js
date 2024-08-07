@@ -30,7 +30,7 @@ class UserController {
 
     async update(req, res) {
         const { name, email, password, oldPassword } = req.body;
-        const { id } = req.params;
+        const { id } = req.user;
 
         const database = await sqliteConnection();
         const user = await database.get("SELECT * FROM users WHERE id = (?)", [ id ]);
