@@ -45,12 +45,16 @@ class UserController {
             throw new AppError("Este e-mail já está em uso.");
         }
 
-        user.email = email ?? user.email;
-        user.name = name ?? user.name;
+        user.email = email ? email : user.email;
+        user.name = name ? name : user.name;
 
         if (password && !oldPassword) {
             throw new AppError("É necessário informar a senha antiga");
         }
+
+        if (oldPassword && !password) {
+            throw new AppError("É necessário informar a nova senha");
+        } 
 
         if (password && oldPassword) {
             const checkOldPassword = await bcrypt.compare(oldPassword, user.password);
